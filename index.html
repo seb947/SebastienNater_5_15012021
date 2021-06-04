@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://kit.fontawesome.com/3d591859c3.js" crossorigin="anonymous" defer></script>
+        <script src="./js/index.js" defer></script>
+        <title>Orinoco</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__list">
+                <i class="header__list__icon fas fa-bars"></i>
+            </div>
+            <img class="header__logo" src="./img/logo.PNG"></img>
+            <div class="header__signin">
+                <a class="header__signin__link" href="#">Connexion</a>
+            </div>
+        </header>
+        <main>
+            <div class= titlecontainer>
+                <h1 class="titlecontainer__title">Orinoco: belles peluches</h1>
+            </div>
+            <div class="searchbar">
+                <input class="searchbar__input" type="search" placeholder="Rechercher un produit">
+                <button class="searchbar__button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <section class="articles">
+                <h2 class="articles__title">Ours en peluche faits à la main</h2>
+
+
+                <div class="destination">
+                    <!-- template destination -->
+                </div>
+
+
+
+            </section>
+        </main>
+        <footer>
+            <img class="footer__logo" src="./img/logo.PNG"></img>
+            <div class="footerlinks">
+                <a href="#">Contact</a>
+                <a href="#">Partenariat</a>
+                <a href="#">Nous rejoindre</a>
+            </div>
+        </footer>
+
+        <!-- Mon template -->
+        <template class="template">
+            <a class="article" id="productUrl">
+                <div class="article__container">
+                    <img class="article__container__image" id="imageUrl">
+                </div>
+                <div class="article__infos">
+                    <div class="article__infos__name" id="name"></div>
+                    <div class="article__infos__price" id="price"></div>
+                </div>
+            </a>
+        </template>
+
+
+    </body>
+</html>

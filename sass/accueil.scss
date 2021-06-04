@@ -1,0 +1,60 @@
+a{ 
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1{
+    font-size: 18px;
+    font-weight: 900;
+}
+h2{
+    font-size: 13px;
+}
+@media screen and (max-width: 767px)
+{
+    body{
+        margin: 0;
+    }
+    .titlecontainer{
+        display: flex;
+        justify-content: center;
+        &__title{
+            margin: 25px 0 25px 0;
+        }
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .articles__title{
+        text-align: center;
+    }
+    .article{
+        border: 3px #f3e9f1 solid;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        &__title{
+            margin: 40px 12px 12px 12px;
+        }
+        &__container{                               
+            &__image{
+                width: 100%;
+                object-fit: cover;
+            }            
+        }
+        &__infos{
+            text-align: center;
+            background-color: #f3e9f1;
+            &__price{
+                font-weight:900;
+            }
+        }
+    }
+}

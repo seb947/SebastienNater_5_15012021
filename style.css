@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0;
+  }
+
+  .titlecontainer {
+    display: flex;
+    justify-content: center;
+  }
+  .titlecontainer__title {
+    margin: 25px 0 25px 0;
+  }
+
+  .searchbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .articles__title {
+    text-align: center;
+  }
+
+  .article {
+    border: 3px #f3e9f1 solid;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .article__title {
+    margin: 40px 12px 12px 12px;
+  }
+  .article__container__image {
+    width: 100%;
+    object-fit: cover;
+  }
+  .article__infos {
+    text-align: center;
+    background-color: #f3e9f1;
+  }
+  .article__infos__price {
+    font-weight: 900;
+  }
+}
+@media screen and (max-width: 767px) {
+  .product__nameContainer {
+    display: flex;
+  }
+  .product__nameContainer__name {
+    display: block;
+    text-align: center;
+  }
+  .product__container__links {
+    border: 3px #f3e9f1 solid;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .product__container__links__imgctr__img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .product__container__links__articlename {
+    text-align: center;
+    background-color: #f3e9f1;
+  }
+  .product__color {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .product__price {
+    text-align: center;
+    margin: 25px;
+  }
+  .product__addToCart {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+  }
+  .product__description {
+    margin: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f3e9f1;
+    width: 100vw;
+    height: 50px;
+    position: relative;
+  }
+  .header__list {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 12px;
+    height: 50px;
+    font-size: 20px;
+  }
+  .header__signin {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: absolute;
+    right: 12px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #261624;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer {
+    margin-top: 20px;
+    padding: 12px 12px 35px 12px;
+    background-color: #f3e9f1;
+  }
+
+  .footer__logo {
+    width: 100px;
+  }
+
+  .footerlinks {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px)
+{
+    footer{
+        margin-top: 20px;
+        padding: 12px 12px 35px 12px;
+        background-color: #f3e9f1;
+    }
+    .footer__logo{
+        width: 100px;
+    }
+    .footerlinks{
+        margin-top: 15px;
+        display:flex;
+        justify-content: space-around;
+        font-size: 12px;
+    }
+    
+}
