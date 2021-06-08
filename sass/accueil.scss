@@ -1,9 +1,9 @@
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
 a{ 
     text-decoration: none;
     color: black;
-}
-body{
-    font-family: 'Noto Sans JP', sans-serif;
 }
 h1{
     font-size: 18px;
@@ -43,15 +43,18 @@ h2{
         &__title{
             margin: 40px 12px 12px 12px;
         }
-        &__container{                               
+        &__container{ 
+            height: 200px;
+            overflow: hidden;                                 
             &__image{
                 width: 100%;
-                object-fit: cover;
+                height: 100%;
             }            
         }
         &__infos{
             text-align: center;
             background-color: #f3e9f1;
+            padding: 8px;
             &__price{
                 font-weight:900;
             }

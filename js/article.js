@@ -1,54 +1,36 @@
+displayArticle();
+
+async function displayArticle() {
+    let articleId = getId();
+	const article = await fetchArticle(articleId);
+	displayData(article);
+    addToCart(article);
+}
+
 function getId(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const product = urlParams.get('id');
-    let counter = product[6];
-    return (counter - 1);
+    return (urlParams.get("id"));
 }
 
-function changeImage(teddy){
-    let imagesUrl = document.getElementsByClassName("product__container__links__imgctr__img");
-    imagesUrl[0].setAttribute("src", teddy.imageUrl);
+function fetchArticle(articleId) {
+	return fetch(`http://localhost:3000/api/teddies/${articleId}`)
+		.then(response => response.json())
+		.then(article => article)
+		.catch(error => alert(error));
 }
 
-function changePrice(teddy){
-    let teddyPrice = document.getElementsByClassName("product__price__number");
-    teddyPrice[0].innerHTML = teddy.price;
+function displayData(article) {
+    document.getElementsByClassName("product__nameContainer__name")[0].textContent = article.name;
+    document.getElementsByClassName("product__container__links__imgctr__img")[0].src = article.imageUrl;
+    document.getElementsByClassName("product__price__number")[0].textContent = article.price / 100;
+    document.getElementsByClassName("product__description")[0].textContent = article.description;
 }
 
-function changeDescription(teddy){
-    let teddyDescription = document.getElementsByClassName("product__description");
-    teddyDescription[0].innerHTML = teddy.description;
-}
-
-function changeName(teddy){
-    let teddyName = document.getElementsByClassName("product__nameContainer__name");
-    teddyName[0].innerHTML = teddy.name;
-}
-
-function addToCart(pageID){
+function addToCart(article){
     const button = document.getElementById("addToCart");
-    button.addEventListener('click', function(teddy){
-        localStorage.setItem("id", pageID);
+    button.addEventListener('click', function(){
+        localStorage.setItem("article", article);
     })
 }
-
-fetch("http://localhost:3000/api/teddies")
-    .then(function(res){
-        if (res.ok) {
-            return res.json();
-        }
-    })
-    .then(function(teddy){
-        let pageId = getId();
-        console.log(pageId)
-        changeImage(teddy[pageId]);
-        changePrice(teddy[pageId]);
-        changeDescription(teddy[pageId]);
-        changeName(teddy[pageId]);
-        addToCart(pageId);
-    })
-
-    .catch(function(err){
-        console.log("erreur de chargement des informations")
-    });

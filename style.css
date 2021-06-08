@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: black;
-}
-
-body {
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 h1 {
@@ -52,13 +52,18 @@ h2 {
   .article__title {
     margin: 40px 12px 12px 12px;
   }
+  .article__container {
+    height: 200px;
+    overflow: hidden;
+  }
   .article__container__image {
     width: 100%;
-    object-fit: cover;
+    height: 100%;
   }
   .article__infos {
     text-align: center;
     background-color: #f3e9f1;
+    padding: 8px;
   }
   .article__infos__price {
     font-weight: 900;
@@ -81,9 +86,13 @@ h2 {
     flex-wrap: wrap;
     margin-top: 20px;
   }
+  .product__container__links__imgctr {
+    height: 200px;
+    overflow: hidden;
+  }
   .product__container__links__imgctr__img {
+    height: 100%;
     width: 100%;
-    object-fit: cover;
   }
   .product__container__links__articlename {
     text-align: center;

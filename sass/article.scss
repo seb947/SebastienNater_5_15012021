@@ -16,10 +16,12 @@
                 flex-basis: 100%;
                 flex-wrap: wrap;
                 margin-top: 20px;
-                &__imgctr{                    
+                &__imgctr{  
+                    height: 200px;
+                    overflow: hidden;                
                     &__img{
+                        height: 100%;
                         width: 100%;
-                        object-fit: cover;
                     }
                 }
                 &__articlename{

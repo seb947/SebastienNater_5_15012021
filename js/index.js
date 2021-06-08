@@ -12,18 +12,7 @@ function fetchData() {
 		.catch(error => alert(error));
 }
 
-function removeIds() {
-	document.getElementsByClassName("article__infos__name")[0].removeAttribute("id");
-	document.getElementsByClassName("article__infos__price")[0].removeAttribute("id");
-	document.getElementsByClassName("article__container__image")[0].removeAttribute("id");
-	articles = document.getElementsByClassName("article");
-	for(elements of articles)
-	{
-		elements.removeAttribute("id");
-	}
-}
-
-const displayData = teddy => {
+function displayData(teddy) {
 	const template = document.getElementsByClassName('template')[0];
 	const clone = document.importNode(template.content, true);
 
@@ -36,3 +25,14 @@ const displayData = teddy => {
 
 	removeIds();
 };
+
+function removeIds() {
+	document.getElementsByClassName("article__infos__name")[0].removeAttribute("id");
+	document.getElementsByClassName("article__infos__price")[0].removeAttribute("id");
+	document.getElementsByClassName("article__container__image")[0].removeAttribute("id");
+	articles = document.getElementsByClassName("article");
+	for(elements of articles)
+	{
+		elements.removeAttribute("id");
+	}
+}
