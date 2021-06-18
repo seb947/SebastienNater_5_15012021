@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <script src="https://kit.fontawesome.com/3d591859c3.js" crossorigin="anonymous" defer></script>
-        <script src="./js/index.js" defer></script>
+        <script src="./js/cart.js" defer></script>
         <title>Orinoco</title>
     </head>
 
@@ -24,24 +24,18 @@
         </header>
         <main>
             <div class= titlecontainer>
-                <h1 class="titlecontainer__title">Orinoco: belles peluches</h1>
-            </div>
-            <div class="searchbar">
-                <input class="searchbar__input" type="search" placeholder="Rechercher un produit">
-                <button class="searchbar__button">
-                    <i class="fas fa-search"></i>
-                </button>
+                <h1 class="titlecontainer__title">Votre Panier:</h1>
             </div>
             <section class="articles">
-                <h2 class="articles__title">Ours en peluche faits à la main</h2>
-
 
                 <div class="destination">
                     <!-- template destination -->
                 </div>
 
-
-
+                <div class="articles__totalPrice">Prix total:
+                    <span class="articles__totalPrice__total"></span>
+                     €
+                </div>
             </section>
         </main>
         <footer>
@@ -55,16 +49,19 @@
 
         <!-- Mon template -->
         <template class="template">
-            <a class="article" id="productUrl">
+            <div class="article">
                 <div class="article__container">
-                    <img class="article__container__image" id="imageUrl">
+                    <img class="article__container__image">
                 </div>
                 <div class="article__infos">
-                    <div class="article__infos__name" id="name"></div>
-                    <div class="article__infos__price" id="price"></div>
-                    <div class="article__infos__qty" id="qty"></div>
+                    <div class="article__infos__name"></div>
+                    <div class="article__infos__price"></div>
+                    <div class="article__infos__qty"></div>
+                    <button class="article__infos__plus">+</button>
+                    <button class="article__infos__remove">Supprimer</button>
+                    <button class="article__infos__minus">-</button>
                 </div>
-            </a>
+            </div>
         </template>
 
 

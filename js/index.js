@@ -16,7 +16,7 @@ function displayData(teddy) {
 	const template = document.getElementsByClassName('template')[0];
 	const clone = document.importNode(template.content, true);
 
-	clone.getElementById('name').textContent = teddy.name;
+	clone.querySelector('.article__infos__name').textContent = teddy.name;
 	clone.getElementById('price').textContent = teddy.price / 100 + ' €';
 	clone.getElementById('imageUrl').src = teddy.imageUrl;
 	clone.getElementById('productUrl').href = 'article.html?id=' + teddy._id;

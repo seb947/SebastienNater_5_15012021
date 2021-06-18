@@ -1,5 +1,5 @@
 displayArticle();
-
+//localStorage.clear();
 async function displayArticle() {
     let articleId = getId();
 	const article = await fetchArticle(articleId);
@@ -10,7 +10,6 @@ async function displayArticle() {
 function getId(){
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const product = urlParams.get('id');
     return (urlParams.get("id"));
 }
 
@@ -28,9 +27,30 @@ function displayData(article) {
     document.getElementsByClassName("product__description")[0].textContent = article.description;
 }
 
-function addToCart(article){
-    const button = document.getElementById("addToCart");
-    button.addEventListener('click', function(){
-        localStorage.setItem("article", article);
-    })
+function addToCart(teddy){
+	const addItem = document.getElementById('addToCart');
+	let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+	function addProduct(product) {
+		console.log(product);
+		console.log(cart);
+		const find = cart.find(cartItem => cartItem._id === product._id);
+		if (find) {
+			find.qty += product.qty;
+		} else {
+			cart.push(product);
+		}
+		localStorage.setItem('cart', JSON.stringify(cart));
+		console.log(localStorage.getItem('cart'));
+	};
+
+	addItem.addEventListener('click', () => {
+		addProduct({
+			_id: teddy._id,
+			name: teddy.name,
+			price: teddy.price,
+			img: teddy.imageUrl,
+			qty: 1
+		});
+	});
 }
