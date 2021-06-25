@@ -22,7 +22,7 @@
                 <a class="header__signin__link" href="./cart.html">Mon Panier</a>
             </div>
         </header>
-        <main>
+        <main class="cartContent">
             <div class= titlecontainer>
                 <h1 class="titlecontainer__title">Votre Panier:</h1>
             </div>
@@ -37,6 +37,71 @@
                      €
                 </div>
             </section>
+            <section class="customerInformations">
+                <form class="customerInformations__form" id="formValidation">
+					<div class="customerInformations__form__field">
+						<label for="firstName" class="customerInformations__form__info">
+                        Prénom</label>
+						<input type="text"
+							class="customerInformations__form__input"
+                            id="firstName"
+                            name="firstname"
+                            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+							placeholder="ex: Paul"
+							required
+						/>
+					</div>
+					<div class="customerInformations__form__field">
+						<label for="lastName" class="customerInformations__form__info">
+                            Nom</label>
+						<input type="text"
+							class="customerInformations__form__input"
+                            id="lastName"
+                            name="lastName"
+                            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+							placeholder="ex: Dupont"
+							required
+						/>
+					</div>
+					<div class="customerInformations__form__field">
+						<label for="address" class="customerInformations__form__info">
+                            Adresse</label>
+						<input type="text"
+							class="customerInformations__form__input"
+                            id="address"
+                            name="address"
+                            pattern="[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+							placeholder="ex: 20 rue de la Gare"
+							required
+						/>
+					</div>
+					<div class="customerInformations__form__field">
+						<label for="city" class="customerInformations__form__info">
+                            Ville</label>
+						<input type="text"
+							class="customerInformations__form__input"
+                            id="city"
+                            name="city"
+                            pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+"
+							placeholder="ex: Lille"
+							required
+						/>
+					</div>
+					<div class="customerInformations__form__field">
+						<label for="email" class="customerInformations__form__info">
+                            e-mail</label>
+						<input type="email"
+							class="customerInformations__form__input"
+							id="email"
+                            name="email"
+                            pattern="[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}"
+							placeholder="ex: paul.dupont@email.fr"
+							required
+						/>
+					</div>
+                    <button type="submit" class="customerInformations__form__send">Valider la commande</button>
+				</form>
+            </section>
         </main>
         <footer>
             <img class="footer__logo" src="./img/logo.PNG"></img>
@@ -47,7 +112,7 @@
             </div>
         </footer>
 
-        <!-- Mon template -->
+        <!-- template -->
         <template class="template">
             <div class="article">
                 <div class="article__container">

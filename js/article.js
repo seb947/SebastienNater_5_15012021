@@ -1,5 +1,5 @@
 displayArticle();
-//localStorage.clear();
+
 async function displayArticle() {
     let articleId = getId();
 	const article = await fetchArticle(articleId);

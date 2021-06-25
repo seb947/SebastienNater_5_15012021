@@ -1,0 +1,13 @@
+@media screen and (max-width: 767px)
+{
+    .confirmpage__title{
+        margin-bottom: 100px;
+    }
+    .confirmationContent{
+        margin: 20px;
+    }
+    #name, #orderId, #price{
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+}

@@ -1,22 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
-body {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-h1 {
-  font-size: 18px;
-  font-weight: 900;
-}
-
-h2 {
-  font-size: 13px;
-}
-
 @media screen and (max-width: 767px) {
   body {
     margin: 0;
@@ -122,6 +104,44 @@ h2 {
     font-weight: 900;
     text-align: center;
   }
+
+  .customerInformations {
+    display: flex;
+    justify-content: space-around;
+  }
+  .customerInformations__form {
+    display: flex;
+    flex-direction: column;
+  }
+  .customerInformations__form__field {
+    display: flex;
+    margin-top: 8px;
+  }
+  .customerInformations__form__info {
+    width: 100px;
+  }
+  .customerInformations__form__send {
+    margin-top: 25px;
+  }
+
+  .emptyMessage {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media screen and (max-width: 767px) {
+  .confirmpage__title {
+    margin-bottom: 100px;
+  }
+
+  .confirmationContent {
+    margin: 20px;
+  }
+
+  #name, #orderId, #price {
+    font-weight: 900;
+    margin-bottom: 10px;
+  }
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -168,6 +188,39 @@ h2 {
     justify-content: space-around;
     font-size: 12px;
   }
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-bottom: 150px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,4 +7,26 @@
             text-align: center;
         }
     }
+    .customerInformations{
+        display: flex;
+        justify-content: space-around;
+        &__form{
+            display: flex;
+            flex-direction: column;
+            &__field{
+                display: flex;
+                margin-top: 8px;
+            }
+           &__info{
+                width: 100px;
+           }
+           &__send{
+               margin-top: 25px;
+           }
+        }
+    }
+    .emptyMessage{
+        display: flex;
+        justify-content: space-around;
+    }
 }
