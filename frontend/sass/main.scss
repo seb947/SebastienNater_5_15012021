@@ -1,0 +1,36 @@
+@import './accueil.scss';
+@import './article.scss';
+@import './cart.scss';
+@import './confirmation.scss';
+@import './header.scss';
+@import './footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+
+html{
+    height: 100%;
+}
+
+a{ 
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    min-height: 100%;
+    margin: 0;
+    position: relative;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media screen and (max-width: 767px){
+    
+    h1, h2{
+        text-align: center;
+    }
+}

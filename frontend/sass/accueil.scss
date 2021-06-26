@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px)
+{
+    body{
+        margin: 0;
+    }
+    .titlecontainer{
+        display: flex;
+        justify-content: center;
+        &__title{
+            margin: 25px 0 25px 0;
+        }
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .articles__title{
+        text-align: center;
+    }
+    .destination{
+        padding-bottom: 150px;
+    }
+    .article{
+        border: 3px #f3e9f1 solid;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 400px;
+        flex-basis: 100%;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        &__title{
+            margin: 40px 12px 12px 12px;
+        }
+        &__container{ 
+            height: 200px;
+            overflow: hidden;                                 
+            &__image{
+                width: 100%;
+                height: 100%;
+            }            
+        }
+        &__infos{
+            text-align: center;
+            background-color: #f3e9f1;
+            padding: 8px;
+            &__price{
+                font-weight:900;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    body{
+        margin: 0;
+    }
+    .titlecontainer{
+        display: flex;
+        justify-content: center;
+        &__title{
+            margin-top: 50px;
+            font-size: 22px;
+            margin: 25px 0 25px 0;
+        }
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .articles__title{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .destination{
+        margin:0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .article{
+        border: 3px #f3e9f1 solid;
+        display: block;
+        margin: 0 auto;
+        width: 15%;
+        min-width: 250px;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        overflow: hidden;
+        &__title{
+            margin: 40px 12px 12px 12px;
+        }
+        &__container{ 
+            height: 200px;
+            overflow: hidden;                                 
+            &__image{
+                width: 100%;
+                height: 100%;
+            }            
+        }
+        &__infos{
+            text-align: center;
+            background-color: #f3e9f1;
+            height:100%;
+            &__price{
+                font-weight:900;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px){
+    .destination{
+        padding-bottom: 200px;
+    }
+
+}

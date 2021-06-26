@@ -1,0 +1,169 @@
+@media screen and (max-width: 767px){
+    .product{
+        padding-bottom: 150px;
+        &__nameContainer{
+            display: flex;
+            &__name{
+                display: block;
+                text-align: center;
+            }
+        }
+        &__container{
+            padding-bottom: 15px;
+            &__links{
+                border: 3px #f3e9f1 solid;
+                display: block;
+                margin: 0 auto;
+                width: 250px;
+                flex-basis: 100%;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                &__imgctr{  
+                    height: 200px;
+                    overflow: hidden;                
+                    &__img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &__articlename{
+                    text-align: center;
+                    background-color: #f3e9f1;
+                }
+            }
+        }
+        &__color{
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+        &__price{
+            text-align: center;
+            margin: 25px;
+        }
+        &__addToCart{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
+        &__description{
+            margin: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+    .product{
+        padding-bottom: 180px;
+        &__nameContainer{
+            display: flex;
+            &__name{
+                display: block;
+                text-align: center;
+            }
+        }
+        &__container{
+            &__links{
+                border: 3px #f3e9f1 solid;
+                display: block;
+                margin: 0 auto;
+                width: 30%;
+                flex-basis: 100%;
+                flex-wrap: wrap;
+                margin-top: 20px;
+                &__imgctr{  
+                    height: 400px;
+                    overflow: hidden;                
+                    &__img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                &__articlename{
+                    text-align: center;
+                    background-color: #f3e9f1;
+                }
+            }
+        }
+        &__color{
+            display: block;
+            margin: 0 auto;
+            margin-top: 15px;
+        }
+        &__price{
+            font-weight: 900;
+            text-align: center;
+            margin: 25px;
+        }
+        &__addToCart{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 25px;
+        }
+        &__description{
+            margin: 25px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 767px){
+    .product{
+        padding-bottom: 150px;
+        &__nameContainer{
+            display: flex;
+            &__name{
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        &__container{
+            &__links{
+                border: 3px #f3e9f1 solid;
+                display: block;
+                margin: 0 auto;
+                width: 350px;
+                &__imgctr{  
+                    height:300px;
+                    overflow: hidden;                
+                    &__img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1400px){
+    .product{
+        padding-bottom: 150px;
+        &__nameContainer{
+            display: flex;
+            &__name{
+                display: block;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        }
+        &__container{
+            &__links{
+                border: 3px #f3e9f1 solid;
+                display: block;
+                margin: 0 auto;
+                width: 430px;
+                &__imgctr{  
+                    height:350px;
+                    overflow: hidden;                
+                    &__img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

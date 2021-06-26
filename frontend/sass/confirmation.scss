@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px)
+{
+    .confirmpage__title{
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    .confirmationContent{
+        margin: 20px;
+    }
+    .orderConfirmation{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 200px;
+        &__info{
+            text-align: center;
+        }
+    }
+    #name, #orderId, #price{
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .confirmpage__title{
+        margin: 100px 0 100px 0;
+        text-align: center;
+    }
+    .orderConfirmation{
+        display: flex;
+        justify-content: center;
+        &__info{
+            text-align: center;
+        }
+    }
+    #name, #orderId, #price{
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+}
